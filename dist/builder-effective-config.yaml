@@ -1,0 +1,9 @@
+directories:
+  output: dist
+  buildResources: build
+appId: unac-electronv1
+asar: true
+win:
+  target: NSIS
+  icon: build/logo.ico
+electronVersion: 3.0.5

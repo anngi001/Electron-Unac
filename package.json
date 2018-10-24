@@ -1,0 +1,29 @@
+{
+    "name": "unac",
+    "version": "1.0.0",
+    "description": "",
+    "main": "main.js",
+    "scripts": {
+        "pack": "build --dir",
+        "dist": "build",
+        "start": "electron main.js"
+    },
+    "author": "Anngi Alvarado <anngi.alvarado@gmail.com>",
+    "license": "MIT",
+    "build": {
+        "appId": "unac-electronv1",
+        "asar": true,
+        "win": {
+            "target": "NSIS",
+            "icon": "build/logo.ico"
+        }
+    },
+    "dependencies": {
+        "jquery": "^3.3.1"
+    },
+    "devDependencies": {
+        "electron": "^3.0.5",
+        "electron-builder": "^20.28.4",
+        "electron-packager": "^12.2.0"
+    }
+}
